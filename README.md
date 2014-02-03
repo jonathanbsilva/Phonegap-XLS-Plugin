@@ -5,8 +5,6 @@ A Phonegap plugin to save XLS files
 
 ## How to use ##
 
-#### Parameters ####
-
     var data = [
         {id:"1", name:"claudio"} ,
         {id:"2", name:"marta"} ,
@@ -16,12 +14,11 @@ A Phonegap plugin to save XLS files
     filename = "file-example.xls";
     sheetname = "Plan1";
     
-#### Saving ####
-
-    xls.save( data, dirname, filename, sheetname, 
-          function(){ alert('success'); }, 
-          function(err){ alert(err); }
-    );
+    window.xls.save( data, dirname, filename, sheetname, 
+        function(){ alert('success'); }, 
+        function(err){ alert(err); }
+        );
+    }
 
 ## Instalation ##
 
