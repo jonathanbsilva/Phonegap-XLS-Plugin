@@ -172,11 +172,11 @@ public class Xls extends CordovaPlugin {
         //get the sdcard's directory
         File sdCard = Environment.getExternalStorageDirectory();
         //add on the your app's path
-        File dir = new File(sdCard.getAbsolutePath() + "/JExcelApiTest");
+        File dir = new File(sdCard.getAbsolutePath() + "/" + this.dirname);
         //make them in case they're not there
         dir.mkdirs();
         //create a standard java.io.File object for the Workbook to use
-        File wbfile = new File(dir,fileName);
+        File wbfile = new File(dir, fileName);
      
         WritableWorkbook wb = null;
      
