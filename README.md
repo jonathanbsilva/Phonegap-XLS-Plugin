@@ -35,3 +35,12 @@ Copy full directory to project root
 ## Dependences ##
 
 [Phonegap's users permissions to File plugin](http://docs.phonegap.com/en/3.3.0/cordova_file_file.md.html#File)
+
+#### Install File plugin ####
+
+    cordova plugin add org.apache.cordova.file
+    
+## Thanks To ##
+
+* [JExcelAPI Project](http://sourceforge.net/projects/jexcelapi/)
+* [Using JExcelAPI in Android](http://www.kylebeal.com/2011/10/using-jexcelapi-in-an-android-app/)
