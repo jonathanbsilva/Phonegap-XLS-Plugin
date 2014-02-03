@@ -1,4 +1,4 @@
-cordova.define("net.claudiomedeiros.xls.Xls", function(require, exports, module) {
+//cordova.define("net.claudiomedeiros.xls.Xls", function(require, exports, module) {
     var xls =  {
         save: function(data, dirname, filename, sheetname, successCallback, errorCallback){
             /*  Modelo dos parâmetros
@@ -28,4 +28,4 @@ cordova.define("net.claudiomedeiros.xls.Xls", function(require, exports, module)
     }//fim do objeto
 
     module.exports = xls;
-});
+//});
