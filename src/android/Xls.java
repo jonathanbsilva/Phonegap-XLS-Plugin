@@ -52,17 +52,17 @@ public class Xls extends CordovaPlugin {
                 */
                 
                 JSONObject params = args.getJSONObject(0);
-                //Exemplo p/ pegar o valor do parâmetro
-                //params.getString("data") ou params.getLong("data")
-                //Documentação: http://www.json.org/javadoc/org/json/JSONObject.html
-                
+
                 try{
-                    WritableWorkbook wb = this.createWorkbook(params.getString("filename"));
+		   //Define o nome do diretório
+                    this.dirname = params.getString("dirname");
                     
-                    //tenta criar o sheet
+                    //Define o nome do arquivo
+                    WritableWorkbook wb = this.createWorkbook(params.getString("filename"));
+
+                    //Define o nome da planilha
                     WritableSheet sheetObject = this.createSheet(wb, params.getString("sheetname"), 1);
                     
-                    this.dirname = params.getString("dirname");
                     
                     JSONArray lineItems = params.getJSONArray("data");
                     
