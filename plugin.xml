@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
  
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-           id="org.devgirl.calendar"
+           id="net.claudiomedeiros.xls"
       version="0.1.0">
-    <name>Calendar</name>
-    <description>Sample PhoneGap Calendar Plugin</description>
+    <name>XLS</name>
+    <description>A Phonegap plugin to save XLS files</description>
     <license>MIT</license>
-    <keywords>phonegap,calendar</keywords>
+    <keywords>phonegap,xls</keywords>
  
  
-    <js-module src="www/calendar.js" name="Calendar">
-        <clobbers target="window.calendar" />
+    <js-module src="www/xls.js" name="XLS">
+        <clobbers target="window.xls" />
     </js-module>
  
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="Calendar">
-                <param name="android-package" value="org.devgirl.calendar.Calendar"/>
+            <feature name="Xls">
+                <param name="android-package" value="net.claudiomedeiros.xls"/>
             </feature>
         </config-file>
  
-        <source-file src="src/android/Calendar.java" target-dir="src/org/devgirl/calendar" />      
+        <source-file src="src/android/Xls.java" target-dir="src/net/claudiomedeiros/xls" />      
         <source-file src="lib/android/jxl.jar" target-dir="libs" />      
      </platform>          
 </plugin>
