@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
  
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-           id="net.claudiomedeiros.xls"
-      version="0.1.0">
-    <name>XLS</name>
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="net.claudiomedeiros.xls"
+        version="0.1.0">
+    <name>Xls</name>
     <description>A Phonegap plugin to save XLS files</description>
     <license>MIT</license>
     <keywords>phonegap,xls</keywords>
  
  
-    <js-module src="www/xls.js" name="XLS">
+    <js-module src="www/xls.js" name="Xls">
         <clobbers target="window.xls" />
     </js-module>
  
@@ -17,7 +18,7 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Xls">
-                <param name="android-package" value="net.claudiomedeiros.xls"/>
+                <param name="android-package" value="net.claudiomedeiros.xls.Xls"/>
             </feature>
         </config-file>
  
