@@ -51,6 +51,9 @@ public class Xls extends CordovaPlugin {
                     sheetname = "Plan1";
                 */
                 
+                hasTitles = false;
+                rowPosition = 1;
+
                 JSONObject params = args.getJSONObject(0);
 
                 try{
